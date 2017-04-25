@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/display_log"
+        android:onClick="readFromFile"
+        android:title="display_log" />
+    <item
+        android:title="delete_log"
+        android:id="@+id/delete_log"
+        android:onClick="deleteLog"
+        />
+</menu>

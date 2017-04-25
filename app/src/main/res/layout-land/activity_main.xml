@@ -57,11 +57,13 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editText"
-            android:layout_toRightOf="@id/buttonEight"
             android:background="@android:color/holo_green_light"
             android:text="9"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/buttonEight"
+            android:layout_alignBottom="@+id/buttonEight"
+            android:layout_toRightOf="@+id/buttonEight"
+            android:layout_toEndOf="@+id/buttonEight" />
 
         <Button
             android:id="@+id/buttonFour"
@@ -89,11 +91,13 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/buttonNine"
-            android:layout_below="@id/buttonNine"
             android:background="@android:color/holo_blue_light"
             android:text="6"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/buttonTwo"
+            android:layout_alignBottom="@+id/buttonTwo"
+            android:layout_toRightOf="@+id/buttonFive"
+            android:layout_toEndOf="@+id/buttonFive" />
 
         <Button
             android:id="@+id/buttonOne"
@@ -121,44 +125,50 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/buttonNine"
-            android:layout_below="@id/buttonSix"
             android:background="@android:color/darker_gray"
             android:text="3"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/buttonFive"
+            android:layout_alignBottom="@+id/buttonFive"
+            android:layout_toRightOf="@+id/buttonFive"
+            android:layout_toEndOf="@+id/buttonFive" />
 
         <Button
             android:id="@+id/buttonDot"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/buttonOne"
             android:background="@android:color/darker_gray"
             android:text="."
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/buttonThree"
+            android:layout_alignBottom="@+id/buttonThree"
+            android:layout_toRightOf="@+id/buttonThree"
+            android:layout_toEndOf="@+id/buttonThree" />
 
         <Button
             android:id="@+id/buttonZero"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/buttonEight"
-            android:layout_below="@id/buttonTwo"
             android:background="@android:color/holo_blue_light"
             android:text="0"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/buttonNine"
+            android:layout_toEndOf="@+id/buttonNine"
+            android:layout_above="@+id/buttonThree" />
 
         <Button
             android:id="@+id/buttonEqual"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/buttonNine"
-            android:layout_below="@id/buttonThree"
             android:background="@android:color/holo_orange_dark"
             android:text="="
             android:textSize="20sp"
-            android:layout_alignBottom="@+id/buttonZero" />
+            android:layout_below="@+id/buttonAdd"
+            android:layout_alignLeft="@+id/buttonAdd"
+            android:layout_alignStart="@+id/buttonAdd" />
 
         <Button
             android:id="@+id/buttonDivide"
@@ -192,36 +202,22 @@
             android:background="@android:color/holo_orange_dark"
             android:text="-"
             android:textSize="20sp"
-            android:layout_below="@+id/buttonMultiply"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_below="@+id/editText"
+            android:layout_toLeftOf="@+id/buttonDivide"
+            android:layout_toStartOf="@+id/buttonDivide" />
 
         <Button
             android:id="@+id/buttonAdd"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/buttonEqual"
-            android:layout_toRightOf="@id/buttonEqual"
             android:background="@android:color/holo_orange_dark"
             android:text="+"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/buttonMem"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/buttonEqual"
-            android:background="@android:color/holo_orange_dark"
-            android:text="Mem"
             android:textSize="20sp"
-            android:onClick="showPopup"
-            android:layout_below="@+id/buttonEqual"
-            android:layout_toLeftOf="@+id/buttonAdd"
-            android:layout_toStartOf="@+id/buttonAdd" />
-
-
+            android:layout_alignBaseline="@+id/buttonMultiply"
+            android:layout_alignBottom="@+id/buttonMultiply"
+            android:layout_toLeftOf="@+id/buttonMultiply"
+            android:layout_toStartOf="@+id/buttonMultiply" />
 
         <Button
             android:id="@+id/buttonClear"
@@ -234,9 +230,5 @@
             android:layout_below="@+id/buttonAdd"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
-
-
-
-
     </RelativeLayout>
 </layout>
